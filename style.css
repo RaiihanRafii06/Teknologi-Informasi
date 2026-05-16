@@ -1,0 +1,166 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url("oldtrafford2.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  color: white;
+  padding: 30px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1000px;
+  margin: auto;
+
+  background: rgba(15, 15, 15, 0.90);
+
+  padding: 40px;
+
+  border-radius: 20px;
+
+  border: 4px solid gold;
+
+  box-shadow:
+    0 0 20px red,
+    0 0 40px rgba(255,0,0,0.4);
+}
+
+/* JUDUL */
+h1 {
+  text-align: center;
+
+  color: gold;
+
+  font-size: 55px;
+
+  margin-bottom: 20px;
+
+  text-shadow:
+    0 0 10px red,
+    0 0 20px red;
+
+  letter-spacing: 3px;
+}
+
+/* SUB JUDUL */
+h2 {
+  background: linear-gradient(to right, darkred, red);
+
+  padding: 15px;
+
+  border-left: 8px solid gold;
+
+  border-radius: 10px;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  color: white;
+
+  font-size: 30px;
+}
+
+/* GARIS */
+hr {
+  border: none;
+
+  height: 4px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    gold,
+    red,
+    gold,
+    transparent
+  );
+
+  margin: 25px 0;
+
+  border-radius: 20px;
+}
+
+/* GAMBAR */
+.gambar {
+  text-align: center;
+
+  margin: 30px 0;
+}
+
+.gambar img {
+  width: 100%;
+  max-width: 600px;
+
+  border-radius: 20px;
+
+  border: 4px solid gold;
+
+  box-shadow:
+    0 0 15px red,
+    0 0 30px rgba(255,0,0,0.5);
+
+  transition: 0.4s;
+}
+
+/* EFEK HOVER */
+.gambar img:hover {
+  transform: scale(1.03);
+}
+
+/* PARAGRAF */
+p {
+  font-size: 20px;
+
+  line-height: 1.9;
+
+  text-align: justify;
+
+  margin-bottom: 20px;
+
+  color: #f1f1f1;
+}
+
+/* HURUF PERTAMA */
+p::first-letter {
+  font-size: 45px;
+
+  color: gold;
+
+  font-weight: bold;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+}
